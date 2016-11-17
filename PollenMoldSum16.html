@@ -1,0 +1,2838 @@
+ 
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+	
+	
+		
+	
+		<style>
+			Body {font-family: verdana, sans-serif; font-size : 11px; color : 333333;}
+P {font-family: verdana, sans-serif; font-size : 11px; color : 333333; }	
+td {font-family: verdana, sans-serif; font-size : 11px; color : 333333;}
+th {font-family: verdana, sans-serif;font-size : 11px;color : 333333;background-color : e8e8e8;}
+UL {font-family: verdana, sans-serif;font-size : 11px;color : 333333;}
+OL {font-family: verdana, sans-serif;font-size : 11px;color : 333333;}
+LI {font-family: verdana, sans-serif;font-size : 11px;color : 333333;}
+H1 {font-family: verdana, sans-serif; font-size : 13px; font-weight : 800; color : aa6633;}
+H2 {font-family: verdana, sans-serif; font-size : 11px; font-weight : 800; color : 666699;}
+Select {font-family: verdana, sans-serif;font-size : 11px;color : 333333;}
+Input {font-family: verdana, sans-serif;font-size : 11px;color : 333333;}
+Option {font-family: verdana, sans-serif;font-size : 11px;color : 333333;}
+
+A:link {color: 330000}
+A:active {color: ff3333}
+A:visited {color: 330000}
+
+A.subnav:link {color: 330000}
+A.subnav:active {color: ff3333}
+A.subnav:visited {color: 330000}
+
+A.whitenav:link {color: ffffff}
+A.whitenav:active {color: ffffff}
+A.whitenav:visited {color: ffffff}
+
+A.nav:link {color: 006699; font-weight: bold;text-decoration: none;}
+A.nav:active {color: 006666; font-weight: bold;text-decoration: none;}
+A.nav:visited {color: 006699; font-weight: bold;text-decoration: none;}
+
+A.sidebarnav:link {color: 000000}
+A.sidebarnav:active {color: 000000}
+A.sidebarnav:visited {color: 000000}
+
+A.topnav:link {color: 000000; text-decoration: none;}
+A.topnav:active {color: 000000; text-decoration: none;}
+A.topnav:visited {color: 000000; text-decoration: none;}
+A.topnav:hover {color: blue; text-decoration: underline;}
+
+
+.QA {font-family: verdana, sans-serif; font-size : 13px; font-weight : 800; color : aa6633;}
+.nav {
+font-family: verdana, sans-serif;
+font-size : 11px;
+color : ffffff;
+text-decoration: none;
+}
+
+.title {
+font-family: verdana, sans-serif;
+font-size : 10px;
+font-weight : 700;
+color : ffffff;
+}
+
+.titlelarge {
+font-family: verdana, sans-serif;
+font-size : 13px;
+font-weight : 700;
+color : ffffff;
+}
+
+.titleblack {
+font-family: verdana, sans-serif;
+font-size : 13px;
+font-weight : 800;
+color : 000000;
+}
+
+.error {
+font-family: verdana, sans-serif;
+font-size : 10px;
+font-weight : 700;
+color : ff0000;
+}
+.bold {
+font-weight : 700;
+}	
+
+.sidebarnav {
+font-family: verdana, sans-serif;
+font-size : 10px;
+font-weight : 700;
+color : 000000;
+text-decoration: none;
+}
+
+.subnav {
+font-family: verdana, sans-serif;
+font-size : 10px;
+font-weight : 500;
+color : 000000;
+}
+
+.formfield {
+font-family: verdana, sans-serif;
+font-size : 11px;
+color : 000000;
+}
+
+.footnote {
+font-size : 10px;
+}
+
+
+.xsmall	{
+font-family: verdana, sans-serif;
+font-style:  normal;
+font-weight: normal;
+font-size:   9px;
+}	
+
+.NSxsmall	{
+font-family: verdana, sans-serif;
+font-style:  normal;
+font-weight: normal;
+font-size:   10px;
+}	
+
+.small	{
+font-family: verdana, sans-serif;
+font-style:  normal;
+font-weight: normal;
+font-size:   10px;
+}
+
+.rowgray		{
+font-family: verdana, sans-serif;
+font-style:  normal;
+font-weight: normal;
+font-size:   11px;
+background-color : 666666;
+}		
+
+.rowblk{
+font-family: verdana, sans-serif;
+font-style:  normal;
+font-weight: bold;
+color: white;
+font-size:   11px;
+background-color : 000000;
+}	
+
+.rowltgray		{
+font-family: verdana, sans-serif;
+font-style:  normal;
+font-weight: normal;
+font-size:   11px;
+background-color: eeeeee;
+}
+
+.chugga {  color: #31526b}
+
+.l		{
+font-family: verdana, sans-serif;
+font-style:  normal;
+font-weight: normal;
+font-size:   11px;
+background-color: ccffcc;
+}
+
+.m		{
+font-family: verdana, sans-serif;
+font-style:  normal;
+font-weight: normal;
+font-size:   11px;
+background-color: ffff66;
+}
+
+.h		{
+font-family: verdana, sans-serif;
+font-style:  normal;
+font-weight: normal;
+font-size:   11px;
+background-color: ff9900;
+}
+
+.v		{
+font-family: verdana, sans-serif;
+font-style:  normal;
+font-weight: normal;
+font-size:   11px;
+color: ffffff;
+background-color: cc0000;
+}
+
+
+		</style>	
+		
+	
+	
+		
+	
+	
+	
+	
+
+	
+	<table border="1">
+	 <tr>
+		<td colspan="34" class="titleblack"><strong>Allergen Calculated Count Report</strong><BR>
+		<strong>Counting Station: RAPCA</strong><br>
+		<strong>Date Range: 01/01/2016 - 11/04/2016</strong>
+		</td>
+	</tr>
+	
+    
+    
+	<tr>
+		<td bgcolor="c0c0c0" colspan="34"><strong>Part 1: Pollen Counts (all counts are per cubic meter of air)</strong></td>
+	</tr>
+	<tr>
+		<Td bgcolor="c0c0c0"><strong>Date</strong></TD>
+		<td bgcolor="c0c0c0"><strong>Total Pollen Count</strong></td>
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Acer</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Alnus</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Ambrosia</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Artemisia</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Asteraceae (Excluding Ambrosia and Artemisia)</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Betula</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Carya</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Chenopodiaceae/Amaranthaceae </strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Cupressaceae</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Cyperaceae</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Fagus</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Fraxinus</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Gramineae / Poaceae</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Juglans</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Liquidambar</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Morus</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Olea</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Other Grass Pollen</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Other Tree Pollen</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Other Weed Pollen</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Pinaceae</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Plantago</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Platanus</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Populus</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Quercus</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Rumex</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Salix</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Tilia</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Typha</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Ulmus</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Unidentified Pollen</strong> </td>	
+		
+		<td bgcolor="c0c0c0" align="left"><strong>Urticaceae</strong> </td>	
+		
+	</tr> 
+	
+	<tr>
+		<TD>01/04/2016</TD>
+		<td>2</td>
+		<td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/05/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/06/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/07/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/08/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/11/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/12/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/13/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/14/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/15/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/19/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/20/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/21/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/22/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/25/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/26/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/27/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/28/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/29/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/01/2016</TD>
+		<td>23</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>19</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/02/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/03/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/04/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/05/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/08/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/09/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/10/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/11/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/12/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/16/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/17/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/18/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/19/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/22/2016</TD>
+		<td>30</td>
+		<td>21</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/23/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/29/2016</TD>
+		<td>112</td>
+		<td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>44</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>2</td><td>0</td><td>0</td><td>21</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/01/2016</TD>
+		<td>16</td>
+		<td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/02/2016</TD>
+		<td>26</td>
+		<td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/03/2016</TD>
+		<td>9</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/04/2016</TD>
+		<td>20</td>
+		<td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/07/2016</TD>
+		<td>18</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/08/2016</TD>
+		<td>286</td>
+		<td>14</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>155</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>95</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/09/2016</TD>
+		<td>177</td>
+		<td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>7</td><td>0</td><td>63</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>2</td><td>0</td><td>16</td><td>0</td><td>0</td><td>63</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/10/2016</TD>
+		<td>194</td>
+		<td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>76</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>76</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/11/2016</TD>
+		<td>14</td>
+		<td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/14/2016</TD>
+		<td>465</td>
+		<td>5</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>32</td><td>0</td><td>294</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>88</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/15/2016</TD>
+		<td>64</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>46</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/16/2016</TD>
+		<td>85</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>67</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/17/2016</TD>
+		<td>84</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>51</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/18/2016</TD>
+		<td>7</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/21/2016</TD>
+		<td>26</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/22/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/23/2016</TD>
+		<td>41</td>
+		<td>9</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/24/2016</TD>
+		<td>65</td>
+		<td>5</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>5</td><td>0</td><td>2</td><td>14</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>5</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/25/2016</TD>
+		<td>55</td>
+		<td>21</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>5</td><td>2</td><td>0</td><td>19</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/28/2016</TD>
+		<td>739</td>
+		<td>76</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>486</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td><td>0</td><td>19</td><td>63</td><td>12</td><td>0</td><td>16</td><td>5</td><td>0</td><td>23</td><td>7</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/29/2016</TD>
+		<td>133</td>
+		<td>23</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>74</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>12</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/30/2016</TD>
+		<td>32</td>
+		<td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/31/2016</TD>
+		<td>299</td>
+		<td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>60</td><td>5</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>12</td><td>171</td><td>7</td><td>0</td><td>14</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/01/2016</TD>
+		<td>348</td>
+		<td>37</td><td>5</td><td>0</td><td>0</td><td>0</td><td>12</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>144</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>2</td><td>100</td><td>0</td><td>0</td><td>9</td><td>5</td><td>0</td><td>25</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/04/2016</TD>
+		<td>459</td>
+		<td>118</td><td>30</td><td>0</td><td>0</td><td>0</td><td>5</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>76</td><td>5</td><td>0</td><td>0</td><td>7</td><td>2</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>28</td><td>95</td><td>16</td><td>0</td><td>30</td><td>0</td><td>0</td><td>19</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/05/2016</TD>
+		<td>41</td>
+		<td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/06/2016</TD>
+		<td>32</td>
+		<td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/07/2016</TD>
+		<td>144</td>
+		<td>19</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>2</td><td>16</td><td>2</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td><td>5</td><td>0</td><td>9</td><td>0</td><td>9</td><td>32</td><td>7</td><td>0</td><td>12</td><td>0</td><td>0</td><td>7</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/08/2016</TD>
+		<td>84</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>5</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>32</td><td>21</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/11/2016</TD>
+		<td>108</td>
+		<td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>7</td><td>0</td><td>2</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td><td>2</td><td>0</td><td>9</td><td>0</td><td>2</td><td>12</td><td>19</td><td>0</td><td>9</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/12/2016</TD>
+		<td>18</td>
+		<td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/13/2016</TD>
+		<td>22</td>
+		<td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>5</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/14/2016</TD>
+		<td>35</td>
+		<td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>12</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/15/2016</TD>
+		<td>21</td>
+		<td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>12</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/18/2016</TD>
+		<td>185</td>
+		<td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>30</td><td>0</td><td>0</td><td>0</td><td>0</td><td>23</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>7</td><td>81</td><td>14</td><td>0</td><td>12</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/19/2016</TD>
+		<td>64</td>
+		<td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>12</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>23</td><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/20/2016</TD>
+		<td>67</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>19</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>12</td><td>0</td><td>7</td><td>2</td><td>0</td><td>5</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/21/2016</TD>
+		<td>175</td>
+		<td>23</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>19</td><td>0</td><td>0</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td><td>2</td><td>0</td><td>5</td><td>0</td><td>5</td><td>32</td><td>23</td><td>0</td><td>25</td><td>5</td><td>0</td><td>2</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/22/2016</TD>
+		<td>483</td>
+		<td>56</td><td>2</td><td>0</td><td>0</td><td>0</td><td>14</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td><td>0</td><td>2</td><td>0</td><td>60</td><td>0</td><td>0</td><td>5</td><td>7</td><td>5</td><td>0</td><td>30</td><td>32</td><td>146</td><td>0</td><td>72</td><td>2</td><td>0</td><td>9</td><td>7</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/25/2016</TD>
+		<td>831</td>
+		<td>46</td><td>2</td><td>0</td><td>0</td><td>0</td><td>5</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>32</td><td>0</td><td>2</td><td>0</td><td>148</td><td>0</td><td>0</td><td>23</td><td>5</td><td>14</td><td>0</td><td>53</td><td>25</td><td>412</td><td>0</td><td>0</td><td>0</td><td>0</td><td>46</td><td>16</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/26/2016</TD>
+		<td>354</td>
+		<td>19</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>21</td><td>0</td><td>2</td><td>0</td><td>30</td><td>2</td><td>2</td><td>35</td><td>0</td><td>37</td><td>0</td><td>0</td><td>0</td><td>2</td><td>5</td><td>0</td><td>30</td><td>65</td><td>76</td><td>0</td><td>16</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/27/2016</TD>
+		<td>503</td>
+		<td>14</td><td>2</td><td>2</td><td>0</td><td>0</td><td>5</td><td>2</td><td>0</td><td>5</td><td>0</td><td>0</td><td>19</td><td>0</td><td>12</td><td>0</td><td>215</td><td>0</td><td>0</td><td>16</td><td>0</td><td>7</td><td>0</td><td>30</td><td>56</td><td>56</td><td>0</td><td>51</td><td>0</td><td>0</td><td>9</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/28/2016</TD>
+		<td>126</td>
+		<td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>7</td><td>7</td><td>0</td><td>19</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>12</td><td>30</td><td>7</td><td>0</td><td>16</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/29/2016</TD>
+		<td>220</td>
+		<td>14</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>2</td><td>0</td><td>63</td><td>0</td><td>0</td><td>14</td><td>0</td><td>2</td><td>0</td><td>0</td><td>44</td><td>46</td><td>0</td><td>19</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/02/2016</TD>
+		<td>951</td>
+		<td>21</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>32</td><td>2</td><td>0</td><td>0</td><td>306</td><td>0</td><td>0</td><td>51</td><td>0</td><td>21</td><td>0</td><td>53</td><td>125</td><td>287</td><td>0</td><td>25</td><td>0</td><td>0</td><td>16</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/03/2016</TD>
+		<td>46</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>19</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>14</td><td>9</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/04/2016</TD>
+		<td>297</td>
+		<td>19</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>97</td><td>0</td><td>0</td><td>19</td><td>0</td><td>5</td><td>0</td><td>25</td><td>37</td><td>72</td><td>0</td><td>9</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/05/2016</TD>
+		<td>19</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/06/2016</TD>
+		<td>79</td>
+		<td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>5</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>9</td><td>21</td><td>12</td><td>0</td><td>5</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/09/2016</TD>
+		<td>133</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>35</td><td>0</td><td>0</td><td>5</td><td>0</td><td>7</td><td>0</td><td>12</td><td>25</td><td>21</td><td>0</td><td>12</td><td>0</td><td>0</td><td>5</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/10/2016</TD>
+		<td>9</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/11/2016</TD>
+		<td>21</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>2</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/12/2016</TD>
+		<td>41</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>2</td><td>12</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/13/2016</TD>
+		<td>56</td>
+		<td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>23</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>7</td><td>5</td><td>5</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/16/2016</TD>
+		<td>54</td>
+		<td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>5</td><td>0</td><td>2</td><td>0</td><td>2</td><td>5</td><td>14</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/17/2016</TD>
+		<td>8</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/18/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/19/2016</TD>
+		<td>8</td>
+		<td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/20/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/23/2016</TD>
+		<td>140</td>
+		<td>35</td><td>0</td><td>0</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td><td>35</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>25</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>9</td><td>7</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/24/2016</TD>
+		<td>10</td>
+		<td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/25/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/26/2016</TD>
+		<td>8</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/27/2016</TD>
+		<td>8</td>
+		<td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/31/2016</TD>
+		<td>83</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>9</td><td>5</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>12</td><td>0</td><td>0</td><td>21</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/01/2016</TD>
+		<td>16</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>5</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/02/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/03/2016</TD>
+		<td>18</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/06/2016</TD>
+		<td>60</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>7</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>2</td><td>0</td><td>5</td><td>21</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/07/2016</TD>
+		<td>29</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/08/2016</TD>
+		<td>6</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/09/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/10/2016</TD>
+		<td>6</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/13/2016</TD>
+		<td>25</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>7</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/14/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/15/2016</TD>
+		<td>9</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/16/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/17/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/20/2016</TD>
+		<td>16</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>7</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/21/2016</TD>
+		<td>9</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/22/2016</TD>
+		<td>5</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/23/2016</TD>
+		<td>8</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/24/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/27/2016</TD>
+		<td>33</td>
+		<td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>5</td><td>7</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/28/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/29/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/30/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/01/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/05/2016</TD>
+		<td>6</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/06/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/07/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/08/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/11/2016</TD>
+		<td>11</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/12/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/13/2016</TD>
+		<td>8</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/14/2016</TD>
+		<td>9</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/15/2016</TD>
+		<td>5</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/18/2016</TD>
+		<td>34</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>5</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/20/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/21/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/22/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/25/2016</TD>
+		<td>7</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/26/2016</TD>
+		<td>9</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/27/2016</TD>
+		<td>19</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/28/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/29/2016</TD>
+		<td>6</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/01/2016</TD>
+		<td>48</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>30</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/02/2016</TD>
+		<td>11</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/03/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/04/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/05/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/08/2016</TD>
+		<td>23</td>
+		<td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/09/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/10/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/11/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/12/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/15/2016</TD>
+		<td>43</td>
+		<td>0</td><td>0</td><td>39</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/16/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/17/2016</TD>
+		<td>7</td>
+		<td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/18/2016</TD>
+		<td>14</td>
+		<td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/19/2016</TD>
+		<td>9</td>
+		<td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/22/2016</TD>
+		<td>55</td>
+		<td>0</td><td>0</td><td>35</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/23/2016</TD>
+		<td>82</td>
+		<td>0</td><td>0</td><td>58</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/24/2016</TD>
+		<td>44</td>
+		<td>0</td><td>0</td><td>28</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/25/2016</TD>
+		<td>69</td>
+		<td>0</td><td>0</td><td>37</td><td>0</td><td>0</td><td>0</td><td>5</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>2</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/26/2016</TD>
+		<td>60</td>
+		<td>0</td><td>0</td><td>30</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>14</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/29/2016</TD>
+		<td>106</td>
+		<td>0</td><td>0</td><td>83</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>14</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/30/2016</TD>
+		<td>154</td>
+		<td>0</td><td>0</td><td>120</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>5</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/31/2016</TD>
+		<td>48</td>
+		<td>0</td><td>0</td><td>30</td><td>5</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/01/2016</TD>
+		<td>64</td>
+		<td>0</td><td>0</td><td>49</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/02/2016</TD>
+		<td>141</td>
+		<td>0</td><td>0</td><td>104</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>7</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/06/2016</TD>
+		<td>148</td>
+		<td>0</td><td>0</td><td>118</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>7</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/07/2016</TD>
+		<td>103</td>
+		<td>0</td><td>0</td><td>81</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/08/2016</TD>
+		<td>82</td>
+		<td>0</td><td>0</td><td>44</td><td>0</td><td>2</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>9</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/09/2016</TD>
+		<td>98</td>
+		<td>0</td><td>0</td><td>69</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>2</td><td>0</td><td>0</td><td>12</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/19/2016</TD>
+		<td>58</td>
+		<td>0</td><td>0</td><td>30</td><td>5</td><td>5</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/20/2016</TD>
+		<td>32</td>
+		<td>0</td><td>0</td><td>2</td><td>7</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/21/2016</TD>
+		<td>31</td>
+		<td>0</td><td>0</td><td>2</td><td>16</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/22/2016</TD>
+		<td>11</td>
+		<td>0</td><td>0</td><td>5</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/23/2016</TD>
+		<td>28</td>
+		<td>0</td><td>0</td><td>2</td><td>21</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/26/2016</TD>
+		<td>44</td>
+		<td>0</td><td>0</td><td>7</td><td>7</td><td>12</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/27/2016</TD>
+		<td>41</td>
+		<td>2</td><td>0</td><td>19</td><td>0</td><td>5</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/28/2016</TD>
+		<td>25</td>
+		<td>0</td><td>0</td><td>14</td><td>5</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/29/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/30/2016</TD>
+		<td>5</td>
+		<td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/03/2016</TD>
+		<td>19</td>
+		<td>0</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/04/2016</TD>
+		<td>6</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/05/2016</TD>
+		<td>11</td>
+		<td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/06/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/07/2016</TD>
+		<td>11</td>
+		<td>0</td><td>0</td><td>5</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/11/2016</TD>
+		<td>14</td>
+		<td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/12/2016</TD>
+		<td>26</td>
+		<td>0</td><td>0</td><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/13/2016</TD>
+		<td>4</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/14/2016</TD>
+		<td>20</td>
+		<td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>14</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/17/2016</TD>
+		<td>28</td>
+		<td>0</td><td>0</td><td>12</td><td>2</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/18/2016</TD>
+		<td>44</td>
+		<td>0</td><td>0</td><td>19</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>2</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/19/2016</TD>
+		<td>124</td>
+		<td>0</td><td>0</td><td>39</td><td>0</td><td>12</td><td>0</td><td>0</td><td>2</td><td>60</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/20/2016</TD>
+		<td>45</td>
+		<td>0</td><td>0</td><td>7</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>19</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/21/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/24/2016</TD>
+		<td>31</td>
+		<td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>12</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/25/2016</TD>
+		<td>8</td>
+		<td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/26/2016</TD>
+		<td>9</td>
+		<td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/27/2016</TD>
+		<td>11</td>
+		<td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/28/2016</TD>
+		<td>8</td>
+		<td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/31/2016</TD>
+		<td>20</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>7</td><td>0</td><td>0</td><td>0</td><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>11/01/2016</TD>
+		<td>28</td>
+		<td>0</td><td>0</td><td>5</td><td>2</td><td>2</td><td>0</td><td>0</td><td>0</td><td>19</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>11/02/2016</TD>
+		<td>16</td>
+		<td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>11/03/2016</TD>
+		<td>0</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>11/04/2016</TD>
+		<td>2</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> 
+	</TR>
+	 
+	</tr>
+	</table>
+	
+	<BR>
+	<table border="1">
+	
+    
+    
+	<tr>
+		<td bgcolor="c0c0c0" colspan="34"><strong>Part 2: Spore Counts (all counts are per cubic meter of air)</strong></td>
+	</tr>
+	<tr>
+		<Td bgcolor="c0c0c0"><strong>Date</strong></TD>
+		<td bgcolor="c0c0c0"><strong>Total Spore Count</strong></td>
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Alternaria</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Botrytis</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Cercospora</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Cladosporium</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Curvularia</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Dreshslera / Helminthosporium</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Epicoccum</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Fusarium</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Nigrospora</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Oidium / Erysiphe</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Other Fungi</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Penicillium / Aspergillus</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Periconia</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Peronospora</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Pithomyces</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Polythrincium</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Rusts</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Smuts / Myxomycetes</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Stemphylium</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Torula</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Undifferentiated Ascospores</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Undifferentiated Basidiospores</strong> </td>	
+		
+		<td bgcolor="c0c0c0" nowrap align="right"><strong>Unidentified Fungi</strong> </td>	
+		
+	</tr> 
+	
+	<tr>
+		<TD>01/04/2016</TD>
+		<td>318</td>
+		<td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>43</td><td>0</td><td>0</td><td>238</td><td>0</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/05/2016</TD>
+		<td>426</td>
+		<td>0</td><td>0</td><td>0</td><td>59</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>346</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/06/2016</TD>
+		<td>292</td>
+		<td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>65</td><td>0</td><td>0</td><td>189</td><td>0</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/07/2016</TD>
+		<td>588</td>
+		<td>0</td><td>0</td><td>0</td><td>43</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>529</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/08/2016</TD>
+		<td>448</td>
+		<td>0</td><td>0</td><td>0</td><td>135</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>11</td><td>0</td><td>0</td><td>0</td><td>59</td><td>0</td><td>0</td><td>227</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/11/2016</TD>
+		<td>847</td>
+		<td>5</td><td>0</td><td>0</td><td>43</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>65</td><td>0</td><td>0</td><td>713</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/12/2016</TD>
+		<td>480</td>
+		<td>0</td><td>0</td><td>0</td><td>49</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>167</td><td>0</td><td>5</td><td>232</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/13/2016</TD>
+		<td>555</td>
+		<td>0</td><td>0</td><td>0</td><td>32</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>27</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>16</td><td>70</td><td>0</td><td>11</td><td>378</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/14/2016</TD>
+		<td>161</td>
+		<td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>43</td><td>0</td><td>0</td><td>92</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/15/2016</TD>
+		<td>821</td>
+		<td>5</td><td>0</td><td>0</td><td>86</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>0</td><td>0</td><td>0</td><td>238</td><td>0</td><td>11</td><td>459</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/19/2016</TD>
+		<td>199</td>
+		<td>0</td><td>0</td><td>0</td><td>49</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>5</td><td>27</td><td>0</td><td>0</td><td>108</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/20/2016</TD>
+		<td>145</td>
+		<td>0</td><td>0</td><td>0</td><td>32</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>49</td><td>0</td><td>0</td><td>59</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/21/2016</TD>
+		<td>215</td>
+		<td>0</td><td>0</td><td>0</td><td>32</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>54</td><td>0</td><td>5</td><td>124</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/22/2016</TD>
+		<td>130</td>
+		<td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>54</td><td>0</td><td>0</td><td>54</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/25/2016</TD>
+		<td>361</td>
+		<td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0</td><td>173</td><td>0</td><td>0</td><td>157</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/26/2016</TD>
+		<td>848</td>
+		<td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>189</td><td>0</td><td>11</td><td>610</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/27/2016</TD>
+		<td>253</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>103</td><td>0</td><td>0</td><td>140</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/28/2016</TD>
+		<td>43</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>32</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>01/29/2016</TD>
+		<td>339</td>
+		<td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>5</td><td>5</td><td>0</td><td>0</td><td>103</td><td>0</td><td>0</td><td>205</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/01/2016</TD>
+		<td>793</td>
+		<td>0</td><td>0</td><td>0</td><td>54</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>16</td><td>11</td><td>5</td><td>0</td><td>0</td><td>173</td><td>0</td><td>0</td><td>529</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/02/2016</TD>
+		<td>469</td>
+		<td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>59</td><td>0</td><td>0</td><td>383</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/03/2016</TD>
+		<td>6708</td>
+		<td>5</td><td>0</td><td>0</td><td>65</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>216</td><td>0</td><td>0</td><td>6411</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/04/2016</TD>
+		<td>1895</td>
+		<td>0</td><td>0</td><td>0</td><td>32</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>49</td><td>0</td><td>0</td><td>1809</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/05/2016</TD>
+		<td>270</td>
+		<td>0</td><td>0</td><td>0</td><td>27</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>227</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/08/2016</TD>
+		<td>588</td>
+		<td>0</td><td>0</td><td>0</td><td>113</td><td>0</td><td>5</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>49</td><td>0</td><td>0</td><td>0</td><td>0</td><td>146</td><td>0</td><td>0</td><td>265</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/09/2016</TD>
+		<td>485</td>
+		<td>0</td><td>0</td><td>0</td><td>211</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>5</td><td>0</td><td>0</td><td>0</td><td>43</td><td>0</td><td>0</td><td>216</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/10/2016</TD>
+		<td>236</td>
+		<td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>86</td><td>0</td><td>0</td><td>140</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/11/2016</TD>
+		<td>134</td>
+		<td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>5</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>38</td><td>0</td><td>0</td><td>76</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/12/2016</TD>
+		<td>167</td>
+		<td>0</td><td>0</td><td>0</td><td>70</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>32</td><td>0</td><td>0</td><td>65</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/16/2016</TD>
+		<td>221</td>
+		<td>0</td><td>0</td><td>0</td><td>70</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>130</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/17/2016</TD>
+		<td>146</td>
+		<td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>27</td><td>0</td><td>0</td><td>103</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/18/2016</TD>
+		<td>193</td>
+		<td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>178</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/19/2016</TD>
+		<td>416</td>
+		<td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>59</td><td>0</td><td>0</td><td>335</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/22/2016</TD>
+		<td>705</td>
+		<td>5</td><td>0</td><td>0</td><td>302</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>178</td><td>0</td><td>0</td><td>194</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/23/2016</TD>
+		<td>221</td>
+		<td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>54</td><td>0</td><td>0</td><td>135</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>02/29/2016</TD>
+		<td>846</td>
+		<td>11</td><td>0</td><td>0</td><td>324</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>32</td><td>0</td><td>0</td><td>0</td><td>0</td><td>167</td><td>0</td><td>0</td><td>297</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/01/2016</TD>
+		<td>286</td>
+		<td>5</td><td>0</td><td>0</td><td>49</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>227</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/02/2016</TD>
+		<td>756</td>
+		<td>0</td><td>0</td><td>0</td><td>43</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>97</td><td>0</td><td>0</td><td>616</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/03/2016</TD>
+		<td>150</td>
+		<td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>113</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/04/2016</TD>
+		<td>141</td>
+		<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>38</td><td>0</td><td>0</td><td>103</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/07/2016</TD>
+		<td>1172</td>
+		<td>0</td><td>0</td><td>0</td><td>189</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>972</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/08/2016</TD>
+		<td>680</td>
+		<td>0</td><td>0</td><td>0</td><td>157</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>5</td><td>11</td><td>0</td><td>16</td><td>5</td><td>0</td><td>0</td><td>5</td><td>211</td><td>0</td><td>5</td><td>254</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/09/2016</TD>
+		<td>746</td>
+		<td>0</td><td>0</td><td>0</td><td>454</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>54</td><td>0</td><td>0</td><td>216</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/10/2016</TD>
+		<td>4973</td>
+		<td>16</td><td>0</td><td>0</td><td>108</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>16</td><td>0</td><td>0</td><td>4801</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/11/2016</TD>
+		<td>6447</td>
+		<td>5</td><td>0</td><td>0</td><td>383</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>6017</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/14/2016</TD>
+		<td>2116</td>
+		<td>0</td><td>0</td><td>0</td><td>535</td><td>0</td><td>5</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>113</td><td>0</td><td>0</td><td>1458</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/15/2016</TD>
+		<td>8986</td>
+		<td>0</td><td>0</td><td>0</td><td>1458</td><td>0</td><td>5</td><td>16</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>38</td><td>0</td><td>0</td><td>7432</td><td>16</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/16/2016</TD>
+		<td>2852</td>
+		<td>0</td><td>0</td><td>0</td><td>1604</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>22</td><td>16</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>11</td><td>0</td><td>1134</td><td>32</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/17/2016</TD>
+		<td>1392</td>
+		<td>5</td><td>0</td><td>0</td><td>767</td><td>0</td><td>5</td><td>11</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>108</td><td>11</td><td>0</td><td>459</td><td>16</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/18/2016</TD>
+		<td>718</td>
+		<td>0</td><td>0</td><td>0</td><td>405</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>38</td><td>0</td><td>0</td><td>248</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/21/2016</TD>
+		<td>194</td>
+		<td>0</td><td>0</td><td>0</td><td>59</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>5</td><td>103</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/22/2016</TD>
+		<td>441</td>
+		<td>0</td><td>0</td><td>0</td><td>49</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>86</td><td>0</td><td>0</td><td>286</td><td>5</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/23/2016</TD>
+		<td>825</td>
+		<td>0</td><td>0</td><td>0</td><td>108</td><td>0</td><td>0</td><td>27</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>27</td><td>5</td><td>5</td><td>0</td><td>22</td><td>216</td><td>0</td><td>16</td><td>367</td><td>5</td><td>11</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/24/2016</TD>
+		<td>399</td>
+		<td>0</td><td>0</td><td>0</td><td>65</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>11</td><td>0</td><td>0</td><td>0</td><td>49</td><td>0</td><td>0</td><td>248</td><td>11</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/25/2016</TD>
+		<td>2819</td>
+		<td>0</td><td>0</td><td>0</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>27</td><td>0</td><td>0</td><td>2587</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/28/2016</TD>
+		<td>2574</td>
+		<td>0</td><td>0</td><td>0</td><td>211</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>54</td><td>5</td><td>0</td><td>2252</td><td>27</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/29/2016</TD>
+		<td>933</td>
+		<td>5</td><td>0</td><td>11</td><td>76</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>5</td><td>0</td><td>810</td><td>11</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/30/2016</TD>
+		<td>586</td>
+		<td>0</td><td>0</td><td>5</td><td>38</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>113</td><td>0</td><td>0</td><td>410</td><td>0</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>03/31/2016</TD>
+		<td>2261</td>
+		<td>5</td><td>0</td><td>0</td><td>513</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>5</td><td>0</td><td>1728</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/01/2016</TD>
+		<td>4538</td>
+		<td>0</td><td>0</td><td>0</td><td>292</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>27</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>65</td><td>0</td><td>0</td><td>4143</td><td>11</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/04/2016</TD>
+		<td>397</td>
+		<td>0</td><td>0</td><td>0</td><td>97</td><td>0</td><td>5</td><td>11</td><td>0</td><td>0</td><td>5</td><td>11</td><td>0</td><td>43</td><td>5</td><td>5</td><td>0</td><td>11</td><td>27</td><td>0</td><td>5</td><td>167</td><td>0</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/05/2016</TD>
+		<td>371</td>
+		<td>0</td><td>0</td><td>0</td><td>86</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>86</td><td>0</td><td>11</td><td>173</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/06/2016</TD>
+		<td>134</td>
+		<td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>43</td><td>0</td><td>0</td><td>59</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/07/2016</TD>
+		<td>2139</td>
+		<td>0</td><td>0</td><td>11</td><td>157</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>22</td><td>11</td><td>0</td><td>38</td><td>11</td><td>0</td><td>0</td><td>5</td><td>27</td><td>0</td><td>5</td><td>1831</td><td>5</td><td>11</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/08/2016</TD>
+		<td>999</td>
+		<td>0</td><td>0</td><td>0</td><td>54</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>945</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/11/2016</TD>
+		<td>1873</td>
+		<td>0</td><td>0</td><td>0</td><td>86</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>43</td><td>0</td><td>0</td><td>0</td><td>11</td><td>81</td><td>5</td><td>16</td><td>1599</td><td>0</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/12/2016</TD>
+		<td>5655</td>
+		<td>0</td><td>0</td><td>22</td><td>367</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>5</td><td>11</td><td>0</td><td>11</td><td>0</td><td>5</td><td>0</td><td>11</td><td>65</td><td>5</td><td>5</td><td>5126</td><td>11</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/13/2016</TD>
+		<td>1058</td>
+		<td>0</td><td>0</td><td>11</td><td>97</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>38</td><td>0</td><td>0</td><td>891</td><td>11</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/14/2016</TD>
+		<td>728</td>
+		<td>0</td><td>0</td><td>0</td><td>65</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>648</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/15/2016</TD>
+		<td>378</td>
+		<td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>5</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>22</td><td>11</td><td>0</td><td>292</td><td>11</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/18/2016</TD>
+		<td>799</td>
+		<td>0</td><td>0</td><td>0</td><td>103</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>22</td><td>0</td><td>0</td><td>27</td><td>0</td><td>11</td><td>0</td><td>22</td><td>140</td><td>0</td><td>11</td><td>437</td><td>16</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/19/2016</TD>
+		<td>873</td>
+		<td>5</td><td>0</td><td>0</td><td>113</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>5</td><td>167</td><td>0</td><td>0</td><td>540</td><td>22</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/20/2016</TD>
+		<td>712</td>
+		<td>0</td><td>0</td><td>0</td><td>178</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>27</td><td>11</td><td>0</td><td>11</td><td>5</td><td>0</td><td>0</td><td>0</td><td>65</td><td>0</td><td>0</td><td>405</td><td>0</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/21/2016</TD>
+		<td>1635</td>
+		<td>5</td><td>0</td><td>0</td><td>1042</td><td>0</td><td>5</td><td>5</td><td>0</td><td>0</td><td>38</td><td>5</td><td>0</td><td>38</td><td>0</td><td>0</td><td>0</td><td>0</td><td>211</td><td>0</td><td>0</td><td>281</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/22/2016</TD>
+		<td>8906</td>
+		<td>0</td><td>0</td><td>54</td><td>292</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>22</td><td>5</td><td>0</td><td>0</td><td>11</td><td>5</td><td>0</td><td>11</td><td>367</td><td>16</td><td>5</td><td>8091</td><td>11</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/25/2016</TD>
+		<td>3225</td>
+		<td>11</td><td>0</td><td>11</td><td>745</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>22</td><td>5</td><td>0</td><td>76</td><td>0</td><td>0</td><td>0</td><td>0</td><td>119</td><td>0</td><td>0</td><td>2231</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/26/2016</TD>
+		<td>5487</td>
+		<td>5</td><td>0</td><td>0</td><td>1728</td><td>0</td><td>0</td><td>38</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>5</td><td>0</td><td>22</td><td>0</td><td>0</td><td>3673</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/27/2016</TD>
+		<td>5045</td>
+		<td>54</td><td>0</td><td>27</td><td>551</td><td>0</td><td>22</td><td>5</td><td>0</td><td>0</td><td>38</td><td>16</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>22</td><td>97</td><td>16</td><td>11</td><td>4175</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/28/2016</TD>
+		<td>5471</td>
+		<td>27</td><td>0</td><td>0</td><td>594</td><td>0</td><td>16</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>4807</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>04/29/2016</TD>
+		<td>10628</td>
+		<td>5</td><td>0</td><td>49</td><td>238</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>11</td><td>59</td><td>0</td><td>5</td><td>5</td><td>0</td><td>0</td><td>124</td><td>103</td><td>11</td><td>0</td><td>10013</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/02/2016</TD>
+		<td>24603</td>
+		<td>27</td><td>108</td><td>76</td><td>875</td><td>0</td><td>5</td><td>5</td><td>0</td><td>0</td><td>11</td><td>54</td><td>0</td><td>22</td><td>22</td><td>0</td><td>0</td><td>49</td><td>292</td><td>16</td><td>0</td><td>22749</td><td>22</td><td>270</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/03/2016</TD>
+		<td>7036</td>
+		<td>5</td><td>16</td><td>27</td><td>151</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>27</td><td>32</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>113</td><td>22</td><td>0</td><td>6622</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/04/2016</TD>
+		<td>4482</td>
+		<td>11</td><td>16</td><td>16</td><td>497</td><td>0</td><td>11</td><td>5</td><td>0</td><td>0</td><td>5</td><td>16</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>243</td><td>11</td><td>0</td><td>3613</td><td>22</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/05/2016</TD>
+		<td>6799</td>
+		<td>5</td><td>0</td><td>0</td><td>1458</td><td>0</td><td>0</td><td>27</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>5293</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/06/2016</TD>
+		<td>3351</td>
+		<td>11</td><td>0</td><td>5</td><td>556</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>32</td><td>32</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>32</td><td>0</td><td>0</td><td>2663</td><td>5</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/09/2016</TD>
+		<td>3263</td>
+		<td>0</td><td>0</td><td>54</td><td>216</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>11</td><td>0</td><td>11</td><td>16</td><td>0</td><td>0</td><td>0</td><td>130</td><td>0</td><td>22</td><td>2728</td><td>70</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/10/2016</TD>
+		<td>17136</td>
+		<td>0</td><td>0</td><td>32</td><td>254</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>81</td><td>0</td><td>0</td><td>16694</td><td>54</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/11/2016</TD>
+		<td>23252</td>
+		<td>0</td><td>11</td><td>38</td><td>173</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>32</td><td>0</td><td>11</td><td>11</td><td>0</td><td>0</td><td>5</td><td>546</td><td>0</td><td>0</td><td>22258</td><td>151</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/12/2016</TD>
+		<td>12438</td>
+		<td>11</td><td>0</td><td>22</td><td>1820</td><td>0</td><td>0</td><td>5</td><td>11</td><td>0</td><td>5</td><td>16</td><td>0</td><td>22</td><td>11</td><td>0</td><td>0</td><td>0</td><td>718</td><td>5</td><td>0</td><td>9641</td><td>146</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/13/2016</TD>
+		<td>19495</td>
+		<td>5</td><td>16</td><td>43</td><td>1021</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>11</td><td>0</td><td>16</td><td>5</td><td>16</td><td>367</td><td>0</td><td>0</td><td>17915</td><td>59</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/16/2016</TD>
+		<td>3024</td>
+		<td>5</td><td>0</td><td>0</td><td>329</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>11</td><td>0</td><td>27</td><td>0</td><td>0</td><td>0</td><td>16</td><td>54</td><td>0</td><td>5</td><td>2544</td><td>22</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/17/2016</TD>
+		<td>1290</td>
+		<td>0</td><td>0</td><td>0</td><td>189</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>65</td><td>0</td><td>16</td><td>1010</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/18/2016</TD>
+		<td>2003</td>
+		<td>0</td><td>0</td><td>16</td><td>54</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>70</td><td>0</td><td>0</td><td>1799</td><td>43</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/19/2016</TD>
+		<td>3586</td>
+		<td>0</td><td>0</td><td>0</td><td>810</td><td>0</td><td>5</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>2755</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/20/2016</TD>
+		<td>1107</td>
+		<td>0</td><td>0</td><td>0</td><td>151</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>86</td><td>0</td><td>0</td><td>859</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/23/2016</TD>
+		<td>2668</td>
+		<td>0</td><td>0</td><td>0</td><td>708</td><td>16</td><td>0</td><td>0</td><td>5</td><td>0</td><td>16</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>130</td><td>0</td><td>0</td><td>1777</td><td>0</td><td>11</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/24/2016</TD>
+		<td>2316</td>
+		<td>5</td><td>0</td><td>0</td><td>270</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>373</td><td>0</td><td>0</td><td>1620</td><td>38</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/25/2016</TD>
+		<td>2228</td>
+		<td>5</td><td>0</td><td>5</td><td>583</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>5</td><td>0</td><td>508</td><td>0</td><td>0</td><td>972</td><td>92</td><td>27</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/26/2016</TD>
+		<td>1923</td>
+		<td>16</td><td>32</td><td>0</td><td>762</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>5</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>589</td><td>0</td><td>0</td><td>475</td><td>22</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/27/2016</TD>
+		<td>4532</td>
+		<td>0</td><td>0</td><td>0</td><td>767</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>162</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1275</td><td>0</td><td>0</td><td>2247</td><td>54</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>05/31/2016</TD>
+		<td>23315</td>
+		<td>38</td><td>0</td><td>5</td><td>6211</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>81</td><td>43</td><td>0</td><td>16905</td><td>27</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/01/2016</TD>
+		<td>8496</td>
+		<td>22</td><td>76</td><td>0</td><td>4078</td><td>11</td><td>5</td><td>5</td><td>43</td><td>0</td><td>0</td><td>16</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>945</td><td>0</td><td>0</td><td>3187</td><td>103</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/02/2016</TD>
+		<td>8981</td>
+		<td>5</td><td>0</td><td>65</td><td>3170</td><td>0</td><td>22</td><td>5</td><td>0</td><td>0</td><td>16</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>275</td><td>0</td><td>0</td><td>5336</td><td>22</td><td>49</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/03/2016</TD>
+		<td>15402</td>
+		<td>32</td><td>0</td><td>81</td><td>2063</td><td>0</td><td>11</td><td>0</td><td>22</td><td>0</td><td>0</td><td>32</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>1096</td><td>0</td><td>0</td><td>11963</td><td>92</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/06/2016</TD>
+		<td>11395</td>
+		<td>92</td><td>0</td><td>59</td><td>3916</td><td>0</td><td>5</td><td>5</td><td>5</td><td>0</td><td>11</td><td>43</td><td>0</td><td>5</td><td>0</td><td>0</td><td>11</td><td>0</td><td>573</td><td>5</td><td>0</td><td>6530</td><td>130</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/07/2016</TD>
+		<td>8073</td>
+		<td>11</td><td>76</td><td>16</td><td>2614</td><td>0</td><td>11</td><td>0</td><td>5</td><td>0</td><td>0</td><td>16</td><td>0</td><td>11</td><td>0</td><td>0</td><td>5</td><td>0</td><td>459</td><td>5</td><td>0</td><td>4720</td><td>97</td><td>27</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/08/2016</TD>
+		<td>3937</td>
+		<td>5</td><td>22</td><td>0</td><td>610</td><td>0</td><td>11</td><td>5</td><td>0</td><td>0</td><td>11</td><td>27</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>329</td><td>0</td><td>11</td><td>2782</td><td>43</td><td>81</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/09/2016</TD>
+		<td>4418</td>
+		<td>0</td><td>0</td><td>16</td><td>589</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>11</td><td>464</td><td>0</td><td>0</td><td>3284</td><td>43</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/10/2016</TD>
+		<td>3730</td>
+		<td>11</td><td>0</td><td>5</td><td>729</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>16</td><td>16</td><td>5</td><td>0</td><td>0</td><td>1037</td><td>0</td><td>5</td><td>1826</td><td>65</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/13/2016</TD>
+		<td>6712</td>
+		<td>22</td><td>0</td><td>22</td><td>1431</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>5</td><td>22</td><td>0</td><td>43</td><td>5</td><td>5</td><td>5</td><td>0</td><td>934</td><td>0</td><td>0</td><td>4045</td><td>146</td><td>11</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/14/2016</TD>
+		<td>3806</td>
+		<td>11</td><td>54</td><td>0</td><td>880</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>5</td><td>0</td><td>11</td><td>0</td><td>0</td><td>5</td><td>5</td><td>891</td><td>0</td><td>0</td><td>1858</td><td>81</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/15/2016</TD>
+		<td>4418</td>
+		<td>16</td><td>38</td><td>5</td><td>1437</td><td>5</td><td>5</td><td>16</td><td>0</td><td>0</td><td>22</td><td>11</td><td>0</td><td>22</td><td>11</td><td>0</td><td>0</td><td>0</td><td>1188</td><td>0</td><td>11</td><td>1582</td><td>49</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/16/2016</TD>
+		<td>28532</td>
+		<td>16</td><td>32</td><td>167</td><td>1069</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>27</td><td>0</td><td>0</td><td>5</td><td>0</td><td>1480</td><td>0</td><td>11</td><td>25617</td><td>92</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/17/2016</TD>
+		<td>8106</td>
+		<td>22</td><td>0</td><td>38</td><td>2890</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>16</td><td>70</td><td>0</td><td>5</td><td>4996</td><td>43</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/20/2016</TD>
+		<td>6866</td>
+		<td>54</td><td>16</td><td>5</td><td>2085</td><td>5</td><td>5</td><td>5</td><td>0</td><td>0</td><td>5</td><td>16</td><td>0</td><td>38</td><td>0</td><td>0</td><td>22</td><td>5</td><td>2538</td><td>0</td><td>5</td><td>1890</td><td>167</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/21/2016</TD>
+		<td>16009</td>
+		<td>11</td><td>54</td><td>130</td><td>805</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>11</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>643</td><td>0</td><td>5</td><td>14264</td><td>65</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/22/2016</TD>
+		<td>11729</td>
+		<td>43</td><td>11</td><td>16</td><td>4969</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>16</td><td>0</td><td>38</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1221</td><td>0</td><td>5</td><td>5217</td><td>178</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/23/2016</TD>
+		<td>16208</td>
+		<td>11</td><td>11</td><td>140</td><td>2258</td><td>0</td><td>5</td><td>11</td><td>0</td><td>0</td><td>5</td><td>22</td><td>0</td><td>5</td><td>22</td><td>5</td><td>5</td><td>0</td><td>427</td><td>16</td><td>0</td><td>13189</td><td>76</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/24/2016</TD>
+		<td>11627</td>
+		<td>38</td><td>32</td><td>16</td><td>1123</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>22</td><td>5</td><td>0</td><td>0</td><td>0</td><td>540</td><td>0</td><td>0</td><td>9706</td><td>124</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/27/2016</TD>
+		<td>17442</td>
+		<td>32</td><td>32</td><td>16</td><td>3797</td><td>0</td><td>0</td><td>32</td><td>0</td><td>5</td><td>0</td><td>5</td><td>0</td><td>32</td><td>16</td><td>22</td><td>5</td><td>11</td><td>1291</td><td>5</td><td>0</td><td>12001</td><td>140</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/28/2016</TD>
+		<td>9134</td>
+		<td>65</td><td>0</td><td>16</td><td>3732</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>92</td><td>0</td><td>5</td><td>0</td><td>0</td><td>816</td><td>0</td><td>0</td><td>4305</td><td>92</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/29/2016</TD>
+		<td>5947</td>
+		<td>49</td><td>11</td><td>11</td><td>2096</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>702</td><td>0</td><td>16</td><td>2852</td><td>205</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>06/30/2016</TD>
+		<td>3630</td>
+		<td>38</td><td>0</td><td>5</td><td>713</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>740</td><td>0</td><td>11</td><td>1907</td><td>189</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/01/2016</TD>
+		<td>2214</td>
+		<td>32</td><td>0</td><td>5</td><td>481</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1032</td><td>5</td><td>0</td><td>546</td><td>97</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/05/2016</TD>
+		<td>3193</td>
+		<td>76</td><td>0</td><td>5</td><td>654</td><td>0</td><td>11</td><td>16</td><td>0</td><td>0</td><td>16</td><td>11</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>535</td><td>0</td><td>0</td><td>1669</td><td>184</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/06/2016</TD>
+		<td>12869</td>
+		<td>5</td><td>0</td><td>11</td><td>2187</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>1404</td><td>0</td><td>0</td><td>9003</td><td>238</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/07/2016</TD>
+		<td>22268</td>
+		<td>54</td><td>146</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>11</td><td>5</td><td>5</td><td>0</td><td>0</td><td>2220</td><td>11</td><td>0</td><td>19562</td><td>221</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/08/2016</TD>
+		<td>17585</td>
+		<td>27</td><td>27</td><td>22</td><td>2193</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>27</td><td>0</td><td>38</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1772</td><td>5</td><td>16</td><td>13232</td><td>221</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/11/2016</TD>
+		<td>12847</td>
+		<td>113</td><td>0</td><td>0</td><td>4429</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>22</td><td>27</td><td>221</td><td>11</td><td>0</td><td>7993</td><td>5</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/12/2016</TD>
+		<td>7782</td>
+		<td>38</td><td>0</td><td>16</td><td>1577</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>16</td><td>0</td><td>11</td><td>0</td><td>0</td><td>2150</td><td>0</td><td>5</td><td>3743</td><td>221</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/13/2016</TD>
+		<td>9791</td>
+		<td>27</td><td>5</td><td>32</td><td>1458</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>11</td><td>11</td><td>5</td><td>0</td><td>0</td><td>1993</td><td>0</td><td>11</td><td>6060</td><td>157</td><td>11</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/14/2016</TD>
+		<td>24543</td>
+		<td>49</td><td>65</td><td>70</td><td>2123</td><td>0</td><td>11</td><td>0</td><td>0</td><td>5</td><td>16</td><td>11</td><td>0</td><td>5</td><td>49</td><td>22</td><td>0</td><td>0</td><td>789</td><td>0</td><td>16</td><td>21215</td><td>97</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/15/2016</TD>
+		<td>25416</td>
+		<td>130</td><td>0</td><td>0</td><td>6319</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>221</td><td>5</td><td>0</td><td>18633</td><td>92</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/18/2016</TD>
+		<td>9692</td>
+		<td>86</td><td>70</td><td>27</td><td>2020</td><td>5</td><td>0</td><td>27</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>86</td><td>32</td><td>27</td><td>0</td><td>11</td><td>1685</td><td>5</td><td>5</td><td>5293</td><td>292</td><td>16</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/20/2016</TD>
+		<td>12882</td>
+		<td>16</td><td>22</td><td>27</td><td>3219</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>38</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1458</td><td>0</td><td>0</td><td>7864</td><td>227</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/21/2016</TD>
+		<td>8360</td>
+		<td>27</td><td>16</td><td>27</td><td>3532</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>49</td><td>11</td><td>5</td><td>0</td><td>0</td><td>1350</td><td>0</td><td>0</td><td>3095</td><td>243</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/22/2016</TD>
+		<td>14322</td>
+		<td>70</td><td>65</td><td>200</td><td>8193</td><td>0</td><td>5</td><td>11</td><td>43</td><td>0</td><td>0</td><td>5</td><td>0</td><td>22</td><td>22</td><td>11</td><td>0</td><td>0</td><td>1420</td><td>0</td><td>0</td><td>3975</td><td>275</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/25/2016</TD>
+		<td>9331</td>
+		<td>54</td><td>54</td><td>59</td><td>3710</td><td>0</td><td>5</td><td>11</td><td>0</td><td>0</td><td>32</td><td>5</td><td>0</td><td>119</td><td>32</td><td>81</td><td>0</td><td>11</td><td>1458</td><td>0</td><td>0</td><td>3500</td><td>200</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/26/2016</TD>
+		<td>9726</td>
+		<td>49</td><td>54</td><td>16</td><td>3716</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>5</td><td>5</td><td>5</td><td>0</td><td>556</td><td>0</td><td>11</td><td>5066</td><td>227</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/27/2016</TD>
+		<td>16841</td>
+		<td>119</td><td>0</td><td>0</td><td>6481</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>38</td><td>0</td><td>0</td><td>5</td><td>11</td><td>184</td><td>38</td><td>0</td><td>9938</td><td>27</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/28/2016</TD>
+		<td>11061</td>
+		<td>54</td><td>0</td><td>0</td><td>4267</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>151</td><td>0</td><td>0</td><td>6589</td><td>0</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>07/29/2016</TD>
+		<td>13438</td>
+		<td>0</td><td>0</td><td>0</td><td>3673</td><td>0</td><td>22</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>22</td><td>0</td><td>0</td><td>0</td><td>0</td><td>124</td><td>0</td><td>0</td><td>9560</td><td>32</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/01/2016</TD>
+		<td>14279</td>
+		<td>86</td><td>0</td><td>0</td><td>6049</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>32</td><td>0</td><td>0</td><td>0</td><td>0</td><td>184</td><td>0</td><td>0</td><td>7885</td><td>43</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/02/2016</TD>
+		<td>12120</td>
+		<td>38</td><td>0</td><td>0</td><td>4861</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>0</td><td>108</td><td>0</td><td>0</td><td>7075</td><td>22</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/03/2016</TD>
+		<td>17332</td>
+		<td>54</td><td>0</td><td>0</td><td>9722</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>135</td><td>0</td><td>0</td><td>7399</td><td>11</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/04/2016</TD>
+		<td>5017</td>
+		<td>65</td><td>0</td><td>0</td><td>2106</td><td>0</td><td>0</td><td>27</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>184</td><td>0</td><td>0</td><td>2619</td><td>11</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/05/2016</TD>
+		<td>6893</td>
+		<td>38</td><td>0</td><td>0</td><td>2312</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>0</td><td>22</td><td>200</td><td>0</td><td>0</td><td>4283</td><td>11</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/08/2016</TD>
+		<td>4688</td>
+		<td>70</td><td>5</td><td>22</td><td>1885</td><td>0</td><td>5</td><td>65</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>38</td><td>11</td><td>86</td><td>0</td><td>22</td><td>383</td><td>5</td><td>0</td><td>1518</td><td>562</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/09/2016</TD>
+		<td>4784</td>
+		<td>22</td><td>59</td><td>11</td><td>2420</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>43</td><td>5</td><td>5</td><td>0</td><td>0</td><td>524</td><td>0</td><td>11</td><td>1156</td><td>518</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/10/2016</TD>
+		<td>8947</td>
+		<td>5</td><td>76</td><td>22</td><td>1064</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>16</td><td>0</td><td>11</td><td>5</td><td>5</td><td>0</td><td>5</td><td>1032</td><td>0</td><td>5</td><td>6416</td><td>275</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/11/2016</TD>
+		<td>16057</td>
+		<td>11</td><td>16</td><td>49</td><td>1248</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>11</td><td>16</td><td>0</td><td>5</td><td>621</td><td>0</td><td>0</td><td>13908</td><td>162</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/12/2016</TD>
+		<td>11337</td>
+		<td>76</td><td>0</td><td>0</td><td>4877</td><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>38</td><td>0</td><td>108</td><td>59</td><td>0</td><td>0</td><td>0</td><td>27</td><td>681</td><td>0</td><td>0</td><td>5336</td><td>124</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/15/2016</TD>
+		<td>24363</td>
+		<td>0</td><td>0</td><td>16</td><td>1194</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>529</td><td>0</td><td>0</td><td>22387</td><td>227</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/16/2016</TD>
+		<td>19232</td>
+		<td>5</td><td>22</td><td>5</td><td>2193</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>11</td><td>11</td><td>0</td><td>5</td><td>0</td><td>5</td><td>5</td><td>5</td><td>924</td><td>0</td><td>0</td><td>15884</td><td>157</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/17/2016</TD>
+		<td>21896</td>
+		<td>0</td><td>11</td><td>27</td><td>772</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>11</td><td>0</td><td>22</td><td>0</td><td>11</td><td>0</td><td>0</td><td>708</td><td>0</td><td>0</td><td>20146</td><td>178</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/18/2016</TD>
+		<td>23332</td>
+		<td>16</td><td>22</td><td>43</td><td>2420</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>11</td><td>22</td><td>32</td><td>0</td><td>0</td><td>686</td><td>0</td><td>0</td><td>19827</td><td>243</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/19/2016</TD>
+		<td>24682</td>
+		<td>65</td><td>0</td><td>92</td><td>6238</td><td>16</td><td>0</td><td>5</td><td>0</td><td>16</td><td>22</td><td>5</td><td>0</td><td>32</td><td>32</td><td>22</td><td>0</td><td>0</td><td>1248</td><td>0</td><td>5</td><td>16468</td><td>416</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/22/2016</TD>
+		<td>23844</td>
+		<td>59</td><td>32</td><td>22</td><td>2571</td><td>27</td><td>0</td><td>54</td><td>38</td><td>5</td><td>0</td><td>5</td><td>0</td><td>103</td><td>119</td><td>135</td><td>11</td><td>38</td><td>934</td><td>5</td><td>5</td><td>19508</td><td>162</td><td>11</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/23/2016</TD>
+		<td>12049</td>
+		<td>54</td><td>0</td><td>11</td><td>972</td><td>5</td><td>16</td><td>22</td><td>27</td><td>16</td><td>16</td><td>5</td><td>0</td><td>38</td><td>59</td><td>43</td><td>5</td><td>49</td><td>1242</td><td>0</td><td>11</td><td>8345</td><td>1102</td><td>11</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/24/2016</TD>
+		<td>9913</td>
+		<td>65</td><td>0</td><td>5</td><td>1053</td><td>32</td><td>5</td><td>5</td><td>16</td><td>0</td><td>0</td><td>5</td><td>0</td><td>124</td><td>43</td><td>43</td><td>5</td><td>27</td><td>988</td><td>0</td><td>11</td><td>7081</td><td>400</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/25/2016</TD>
+		<td>14016</td>
+		<td>76</td><td>0</td><td>292</td><td>1285</td><td>27</td><td>27</td><td>32</td><td>43</td><td>0</td><td>11</td><td>54</td><td>0</td><td>76</td><td>81</td><td>103</td><td>5</td><td>43</td><td>1528</td><td>0</td><td>49</td><td>10003</td><td>281</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/26/2016</TD>
+		<td>12526</td>
+		<td>124</td><td>81</td><td>254</td><td>1642</td><td>22</td><td>0</td><td>43</td><td>76</td><td>27</td><td>11</td><td>27</td><td>43</td><td>108</td><td>81</td><td>76</td><td>0</td><td>70</td><td>1437</td><td>11</td><td>22</td><td>8026</td><td>329</td><td>16</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/29/2016</TD>
+		<td>23855</td>
+		<td>43</td><td>0</td><td>76</td><td>3710</td><td>27</td><td>0</td><td>27</td><td>0</td><td>5</td><td>5</td><td>5</td><td>0</td><td>16</td><td>49</td><td>49</td><td>0</td><td>49</td><td>1604</td><td>0</td><td>0</td><td>17823</td><td>367</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/30/2016</TD>
+		<td>15754</td>
+		<td>167</td><td>0</td><td>65</td><td>4866</td><td>5</td><td>0</td><td>54</td><td>5</td><td>22</td><td>0</td><td>5</td><td>0</td><td>70</td><td>43</td><td>59</td><td>0</td><td>22</td><td>735</td><td>0</td><td>11</td><td>9128</td><td>497</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>08/31/2016</TD>
+		<td>13213</td>
+		<td>140</td><td>43</td><td>38</td><td>5293</td><td>5</td><td>16</td><td>103</td><td>5</td><td>5</td><td>0</td><td>5</td><td>0</td><td>81</td><td>54</td><td>86</td><td>0</td><td>16</td><td>1010</td><td>0</td><td>5</td><td>5838</td><td>470</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/01/2016</TD>
+		<td>17084</td>
+		<td>200</td><td>0</td><td>38</td><td>4883</td><td>0</td><td>11</td><td>92</td><td>27</td><td>32</td><td>0</td><td>11</td><td>0</td><td>86</td><td>103</td><td>86</td><td>0</td><td>43</td><td>751</td><td>11</td><td>16</td><td>10040</td><td>654</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/02/2016</TD>
+		<td>9625</td>
+		<td>356</td><td>0</td><td>11</td><td>1772</td><td>0</td><td>11</td><td>92</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>22</td><td>32</td><td>49</td><td>0</td><td>16</td><td>427</td><td>5</td><td>16</td><td>6303</td><td>513</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/06/2016</TD>
+		<td>8963</td>
+		<td>43</td><td>0</td><td>0</td><td>713</td><td>5</td><td>5</td><td>49</td><td>5</td><td>0</td><td>0</td><td>11</td><td>0</td><td>65</td><td>16</td><td>16</td><td>16</td><td>43</td><td>1350</td><td>5</td><td>32</td><td>5833</td><td>751</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/07/2016</TD>
+		<td>11070</td>
+		<td>383</td><td>0</td><td>243</td><td>3521</td><td>27</td><td>16</td><td>103</td><td>43</td><td>11</td><td>0</td><td>11</td><td>0</td><td>113</td><td>54</td><td>81</td><td>5</td><td>92</td><td>1415</td><td>5</td><td>16</td><td>4521</td><td>410</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/08/2016</TD>
+		<td>11449</td>
+		<td>184</td><td>5</td><td>313</td><td>3516</td><td>32</td><td>22</td><td>103</td><td>81</td><td>27</td><td>16</td><td>22</td><td>0</td><td>167</td><td>65</td><td>81</td><td>0</td><td>97</td><td>1901</td><td>5</td><td>81</td><td>4294</td><td>437</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/09/2016</TD>
+		<td>17525</td>
+		<td>86</td><td>81</td><td>248</td><td>3797</td><td>27</td><td>11</td><td>59</td><td>22</td><td>11</td><td>5</td><td>16</td><td>0</td><td>119</td><td>76</td><td>86</td><td>5</td><td>65</td><td>594</td><td>5</td><td>22</td><td>12044</td><td>130</td><td>16</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/19/2016</TD>
+		<td>46799</td>
+		<td>265</td><td>0</td><td>1177</td><td>21604</td><td>22</td><td>27</td><td>362</td><td>59</td><td>59</td><td>11</td><td>0</td><td>0</td><td>146</td><td>32</td><td>178</td><td>5</td><td>11</td><td>1485</td><td>11</td><td>5</td><td>20740</td><td>600</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/20/2016</TD>
+		<td>30282</td>
+		<td>551</td><td>65</td><td>1210</td><td>13778</td><td>65</td><td>32</td><td>432</td><td>43</td><td>113</td><td>5</td><td>11</td><td>0</td><td>238</td><td>0</td><td>113</td><td>5</td><td>81</td><td>1815</td><td>16</td><td>16</td><td>11045</td><td>648</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/21/2016</TD>
+		<td>20391</td>
+		<td>275</td><td>32</td><td>324</td><td>8361</td><td>27</td><td>32</td><td>302</td><td>59</td><td>27</td><td>11</td><td>5</td><td>0</td><td>248</td><td>32</td><td>140</td><td>11</td><td>43</td><td>2625</td><td>11</td><td>22</td><td>6886</td><td>918</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/23/2016</TD>
+		<td>12507</td>
+		<td>140</td><td>0</td><td>162</td><td>4429</td><td>5</td><td>27</td><td>135</td><td>113</td><td>5</td><td>5</td><td>0</td><td>0</td><td>200</td><td>11</td><td>70</td><td>0</td><td>65</td><td>2641</td><td>0</td><td>70</td><td>3478</td><td>951</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/26/2016</TD>
+		<td>11405</td>
+		<td>146</td><td>0</td><td>200</td><td>3764</td><td>43</td><td>11</td><td>151</td><td>113</td><td>5</td><td>11</td><td>22</td><td>0</td><td>367</td><td>0</td><td>113</td><td>22</td><td>86</td><td>1642</td><td>0</td><td>27</td><td>3764</td><td>913</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/27/2016</TD>
+		<td>40228</td>
+		<td>200</td><td>108</td><td>216</td><td>16225</td><td>11</td><td>43</td><td>427</td><td>11</td><td>0</td><td>11</td><td>0</td><td>0</td><td>108</td><td>0</td><td>151</td><td>5</td><td>265</td><td>648</td><td>22</td><td>27</td><td>21388</td><td>362</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/28/2016</TD>
+		<td>15587</td>
+		<td>302</td><td>65</td><td>194</td><td>6222</td><td>16</td><td>65</td><td>319</td><td>86</td><td>0</td><td>22</td><td>32</td><td>0</td><td>486</td><td>38</td><td>157</td><td>11</td><td>200</td><td>686</td><td>16</td><td>81</td><td>6346</td><td>243</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/29/2016</TD>
+		<td>21929</td>
+		<td>22</td><td>38</td><td>76</td><td>1194</td><td>5</td><td>0</td><td>22</td><td>22</td><td>0</td><td>11</td><td>22</td><td>0</td><td>32</td><td>130</td><td>16</td><td>0</td><td>32</td><td>518</td><td>0</td><td>0</td><td>19622</td><td>167</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>09/30/2016</TD>
+		<td>16017</td>
+		<td>32</td><td>16</td><td>151</td><td>5239</td><td>0</td><td>0</td><td>59</td><td>5</td><td>0</td><td>0</td><td>11</td><td>0</td><td>59</td><td>32</td><td>0</td><td>0</td><td>11</td><td>286</td><td>0</td><td>0</td><td>9895</td><td>221</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/03/2016</TD>
+		<td>33805</td>
+		<td>427</td><td>0</td><td>0</td><td>18363</td><td>0</td><td>43</td><td>0</td><td>0</td><td>70</td><td>0</td><td>0</td><td>0</td><td>16</td><td>0</td><td>0</td><td>38</td><td>0</td><td>956</td><td>43</td><td>0</td><td>13665</td><td>184</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/04/2016</TD>
+		<td>18066</td>
+		<td>200</td><td>65</td><td>173</td><td>7912</td><td>0</td><td>11</td><td>297</td><td>27</td><td>5</td><td>5</td><td>5</td><td>0</td><td>76</td><td>0</td><td>38</td><td>11</td><td>11</td><td>627</td><td>0</td><td>0</td><td>8080</td><td>518</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/05/2016</TD>
+		<td>15241</td>
+		<td>292</td><td>5</td><td>97</td><td>6276</td><td>5</td><td>22</td><td>329</td><td>16</td><td>0</td><td>0</td><td>5</td><td>0</td><td>346</td><td>27</td><td>65</td><td>11</td><td>49</td><td>880</td><td>5</td><td>11</td><td>6373</td><td>427</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/06/2016</TD>
+		<td>11234</td>
+		<td>27</td><td>38</td><td>167</td><td>3964</td><td>0</td><td>0</td><td>22</td><td>97</td><td>0</td><td>0</td><td>16</td><td>0</td><td>27</td><td>16</td><td>5</td><td>0</td><td>0</td><td>1345</td><td>0</td><td>11</td><td>5018</td><td>481</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/07/2016</TD>
+		<td>10904</td>
+		<td>103</td><td>0</td><td>70</td><td>4456</td><td>16</td><td>22</td><td>130</td><td>70</td><td>22</td><td>5</td><td>38</td><td>0</td><td>221</td><td>5</td><td>54</td><td>5</td><td>43</td><td>1491</td><td>0</td><td>32</td><td>3473</td><td>648</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/11/2016</TD>
+		<td>9027</td>
+		<td>297</td><td>16</td><td>49</td><td>4494</td><td>5</td><td>11</td><td>232</td><td>22</td><td>0</td><td>27</td><td>11</td><td>0</td><td>227</td><td>16</td><td>49</td><td>11</td><td>65</td><td>535</td><td>5</td><td>43</td><td>2701</td><td>211</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/12/2016</TD>
+		<td>6610</td>
+		<td>70</td><td>0</td><td>38</td><td>2803</td><td>16</td><td>0</td><td>81</td><td>16</td><td>0</td><td>16</td><td>0</td><td>0</td><td>194</td><td>0</td><td>49</td><td>5</td><td>43</td><td>805</td><td>0</td><td>5</td><td>2177</td><td>292</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/13/2016</TD>
+		<td>14383</td>
+		<td>97</td><td>27</td><td>97</td><td>4326</td><td>11</td><td>22</td><td>103</td><td>11</td><td>0</td><td>11</td><td>22</td><td>65</td><td>1982</td><td>32</td><td>65</td><td>5</td><td>38</td><td>556</td><td>0</td><td>22</td><td>6670</td><td>221</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/14/2016</TD>
+		<td>12665</td>
+		<td>119</td><td>0</td><td>5</td><td>3889</td><td>0</td><td>16</td><td>54</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>5</td><td>22</td><td>248</td><td>5</td><td>0</td><td>8264</td><td>38</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/17/2016</TD>
+		<td>7107</td>
+		<td>43</td><td>0</td><td>76</td><td>2798</td><td>11</td><td>5</td><td>76</td><td>32</td><td>0</td><td>5</td><td>286</td><td>0</td><td>297</td><td>0</td><td>81</td><td>11</td><td>92</td><td>826</td><td>5</td><td>16</td><td>2074</td><td>373</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/18/2016</TD>
+		<td>6853</td>
+		<td>92</td><td>0</td><td>65</td><td>2846</td><td>16</td><td>11</td><td>86</td><td>16</td><td>0</td><td>22</td><td>49</td><td>0</td><td>275</td><td>59</td><td>76</td><td>0</td><td>130</td><td>637</td><td>5</td><td>54</td><td>2166</td><td>248</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/19/2016</TD>
+		<td>15252</td>
+		<td>92</td><td>32</td><td>92</td><td>5379</td><td>27</td><td>16</td><td>76</td><td>27</td><td>0</td><td>11</td><td>22</td><td>0</td><td>389</td><td>32</td><td>38</td><td>5</td><td>146</td><td>1134</td><td>0</td><td>43</td><td>7183</td><td>508</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/20/2016</TD>
+		<td>19406</td>
+		<td>270</td><td>38</td><td>157</td><td>7140</td><td>16</td><td>11</td><td>167</td><td>27</td><td>0</td><td>0</td><td>16</td><td>0</td><td>373</td><td>16</td><td>11</td><td>0</td><td>70</td><td>497</td><td>16</td><td>11</td><td>10111</td><td>459</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/21/2016</TD>
+		<td>8326</td>
+		<td>0</td><td>0</td><td>0</td><td>1323</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>524</td><td>5</td><td>0</td><td>6373</td><td>86</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/24/2016</TD>
+		<td>5554</td>
+		<td>189</td><td>0</td><td>86</td><td>373</td><td>0</td><td>22</td><td>232</td><td>11</td><td>0</td><td>5</td><td>11</td><td>0</td><td>443</td><td>11</td><td>11</td><td>11</td><td>76</td><td>1113</td><td>11</td><td>22</td><td>2765</td><td>162</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/25/2016</TD>
+		<td>7635</td>
+		<td>194</td><td>0</td><td>5</td><td>3041</td><td>0</td><td>32</td><td>194</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>427</td><td>11</td><td>0</td><td>0</td><td>92</td><td>410</td><td>11</td><td>0</td><td>3019</td><td>189</td><td>5</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/26/2016</TD>
+		<td>6827</td>
+		<td>130</td><td>0</td><td>0</td><td>2911</td><td>0</td><td>5</td><td>248</td><td>0</td><td>0</td><td>11</td><td>11</td><td>0</td><td>605</td><td>11</td><td>11</td><td>0</td><td>76</td><td>464</td><td>16</td><td>0</td><td>2204</td><td>124</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/27/2016</TD>
+		<td>7194</td>
+		<td>157</td><td>0</td><td>0</td><td>2241</td><td>0</td><td>11</td><td>227</td><td>0</td><td>0</td><td>11</td><td>5</td><td>0</td><td>216</td><td>5</td><td>11</td><td>22</td><td>27</td><td>1388</td><td>5</td><td>27</td><td>2771</td><td>70</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/28/2016</TD>
+		<td>6426</td>
+		<td>27</td><td>0</td><td>0</td><td>1701</td><td>0</td><td>5</td><td>81</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>259</td><td>0</td><td>5</td><td>22</td><td>22</td><td>259</td><td>0</td><td>5</td><td>3937</td><td>103</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>10/31/2016</TD>
+		<td>8246</td>
+		<td>65</td><td>5</td><td>65</td><td>3073</td><td>5</td><td>0</td><td>86</td><td>0</td><td>0</td><td>0</td><td>5</td><td>0</td><td>221</td><td>0</td><td>11</td><td>11</td><td>194</td><td>508</td><td>0</td><td>0</td><td>3619</td><td>378</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>11/01/2016</TD>
+		<td>9878</td>
+		<td>216</td><td>16</td><td>27</td><td>2198</td><td>0</td><td>22</td><td>157</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>308</td><td>16</td><td>5</td><td>22</td><td>92</td><td>2592</td><td>5</td><td>0</td><td>3921</td><td>281</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>11/02/2016</TD>
+		<td>7556</td>
+		<td>16</td><td>0</td><td>92</td><td>3300</td><td>0</td><td>27</td><td>103</td><td>0</td><td>0</td><td>11</td><td>0</td><td>0</td><td>205</td><td>22</td><td>11</td><td>5</td><td>49</td><td>1026</td><td>5</td><td>16</td><td>2258</td><td>410</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>11/03/2016</TD>
+		<td>9198</td>
+		<td>65</td><td>11</td><td>76</td><td>5433</td><td>27</td><td>11</td><td>76</td><td>16</td><td>0</td><td>27</td><td>0</td><td>0</td><td>227</td><td>32</td><td>5</td><td>11</td><td>92</td><td>794</td><td>0</td><td>11</td><td>2052</td><td>232</td><td>0</td> 
+	</TR>
+	
+	<tr>
+		<TD>11/04/2016</TD>
+		<td>10028</td>
+		<td>70</td><td>0</td><td>16</td><td>2198</td><td>0</td><td>11</td><td>38</td><td>5</td><td>0</td><td>11</td><td>0</td><td>0</td><td>194</td><td>5</td><td>16</td><td>0</td><td>43</td><td>410</td><td>0</td><td>11</td><td>6622</td><td>378</td><td>0</td> 
+	</TR>
+	 
+		
+		
+	</table>
+	 
+	
+
