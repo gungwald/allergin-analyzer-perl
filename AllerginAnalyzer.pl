@@ -5,7 +5,7 @@ use strict;
 sub loadTable($);
 sub zeroOutYears($);
 
-# Fix insecure PATH bs when starting gnuplot.
+# Fixes insecure PATH error when starting gnuplot.
 $ENV{PATH} = '/bin:/usr/bin';
 
 my @pages = (
@@ -108,6 +108,9 @@ sub loadTable($)
     return \%allerginTable;
 }
 
+# Accepts a reference to an array containing dates. Changes all the
+# years in the dates to 0 so that the data for different years will
+# overlap instead of appearing in different places.
 sub zeroOutYears($)
 {
     my ($dateArrayRef) = @_;
