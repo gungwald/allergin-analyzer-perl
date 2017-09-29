@@ -9,10 +9,10 @@ sub zeroOutYears($);
 $ENV{PATH} = '/bin:/usr/bin';
 
 my @pages = (
-	'http://www.rapca.org/datafiles/PollenMoldSum13.htm',
 	'http://www.rapca.org/datafiles/PollenMoldSum14.htm',
 	'http://www.rapca.org/datafiles/PollenMoldSum15.htm',
-	'http://www.rapca.org/datafiles/PollenMoldSum16.htm'
+	'http://www.rapca.org/datafiles/PollenMoldSum16.htm',
+	'http://www.rapca.org/datafiles/PollenMoldSum17.htm'
 );
 
 my $alternariaChart = new Chart::Gnuplot(
@@ -69,6 +69,7 @@ foreach my $page (@pages) {
     push(@ambrosiaDataSets, $ambrosiaDataSet);
 }
 
+print "Plotting alternaria: ", @alternariaDataSets;
 $alternariaChart->plot2d(@alternariaDataSets);
 $ambrosiaChart->plot2d(@ambrosiaDataSets);
 
